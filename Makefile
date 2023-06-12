@@ -6,7 +6,7 @@
 #    By: aurue-lo <aurue-lo@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/12 11:27:45 by aurue-lo          #+#    #+#              #
-#    Updated: 2023/06/12 12:20:57 by aurue-lo         ###   ########.fr        #
+#    Updated: 2023/06/12 12:38:21 by aurue-lo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,10 +81,10 @@ $(NAME): $(OBJ_SERVER) $(OBJ_CLIENT)
 fclean: clean
 	$(RM) $(NAME) $(N_SERVER) $(N_CLIENT)
 	make fclean -C $(LIBFT)
-	printf"$(P)$(ligth)minitalk executable files and name cleaned!\n$(E)"
+	printf "$(B)$(ligth)minitalk executable files and name cleaned!\n$(E)"
 clean:
 	$(RM) $(D_OBJ)
 	make clean -C $(LIBFT)
-	printf"$(P)$(ligth) minitalk object files cleaned!\n$(E)"
+	printf "$(B)$(ligth) minitalk object files cleaned!\n$(E)"
 re: fclean all
 .SILENT:
