@@ -1,0 +1,7 @@
+*.a
+*.o
+*.d
+*.vscode
+.DS_Store
+._*
+minitalk
